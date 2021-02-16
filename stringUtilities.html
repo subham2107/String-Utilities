@@ -4,35 +4,78 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="commonstyles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
   <script defer src="stringUtilities.js"></script>
   <title>String Utilities</title>
 </head>
 <body>
-  <header>
-    <h1>String Utilities</h1>
-  </header>
+  <div class="non-footer">
+    <header class="navbar">
+      <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+      <div class="other-websites">
+        <a href="#">String Utilities</a>
+      </div>
 
-  <nav>
-      
-  </nav>
+        <div class="other-websites">
+          <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
+        </div> 
+        <div class="other-websites">
+          <a href="https://my-color-converter.netlify.app/rgb-hex" target="_blank">Color Converter</a>
+        </div>
+        <div class="other-websites">
+          <a href="https://my-time-stamp-converter.netlify.app/humantoepoch" target="_blank">Time Converter</a>
+        </div>
+        <div class="other-websites">
+          <a href="https://my-number-base-converter.netlify.app/decimaltobinary" target="_blank">Number base Converter</a>
+        </div>
+        
+        <div class="other-websites">
+          <a href="#" >Unit Converters</a>
+        </div >        
+    </header>
 
-  <main>
+  <main class="main-content">
     <h2>Enter your input here:</h2>
-    <textarea type="text" id="input" placeholder="Type or paste your code here" rows="15" cols="60"></textarea>
-    <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60"></textarea>
-    <br>
+    <div style="margin-bottom:20px;">
+    <textarea type="text" id="input" placeholder="Type or paste your input here" rows="15" cols="60"></textarea>
+    <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60" readonly></textarea>
+    </div>
+    <input type="button" id="upper-button" value="Upper Case">
+    <input type="button" id="lower-button" value="Lower Case">
+    <input type="button" id="reset-button" value="Reset">
+    <div style="margin-top:40px;">
     <label for="words">WORDS:<span id="words">0</span></label>
     <label for="alpha">ALPHABETS/DIGITS:<span id="alpha">0</span></label>
     <label for="spaces">SPACES:<span id="spaces">0</span></label>
     <label for="paragraphs">PARAGRAPHS:<span id="paragraphs">0</span></label>
-    <input type="button" id="upper-button" value="Upper Case">
-    <input type="button" id="lower-button" value="Lower Case">
+  </div>
   </main>
-  <hr>
+  <section>
+    <div class="content-info" style="text-align: justify;">
+    <h3 style="padding-top: 10px;text-align: center;">What is string utility?</h3>
+    <p>Online text tools is a collection of useful text processing utilities. 
+      All text tools are simple, free and easy to use. 
+      There are no intrusive ads, popups or other garbage. 
+      Just text utilities that work right in your browser. 
+      And all utilities work exactly the same way — load text, get result.</p>
+    <p>Another utility of The Word Counter specifically designed for copywriters and digital marketers is the ability to track your text length against common web standards like Twitter's tweet character count (140), Google's meta description (300), and Facebook's average post display length (~250). Our tools and suite of offerings is ever evolving.</p></div> 
+    </section>
 
-  <footer>
-    Contact me
-  </footer>
+  </div>
+  <div class="footer-wrapper">
+    <footer style="background-color:#24292e;">
+      <div class="footer-info" style="text-align: center;color:white;">
+        <p style="padding-top: 10px;">Check out my profiles here:</p>
+         <div class="footer-logo" >
+           <a href="https://www.linkedin.com/in/subham-mitra/" target="_blank"><img src="Images/linkedin.svg"></a>
+           <a style="margin-left: 10px;margin-right: 10px;" href="https://github.com/subham2107" target="_blank"><img src="Images/github.svg"></a>
+           <a href="https://twitter.com/subham2107" target="_blank"><img src="Images/twitter.svg"></a>
+          </div>
+      </div>
+    </footer>
+    </div>
   
 </body>
 </html>

@@ -6,6 +6,17 @@ const spaces=document.querySelector('#spaces');
 const paragraphs=document.querySelector('#paragraphs');
 const lowerButton=document.querySelector('#lower-button');
 const upperButton=document.querySelector('#upper-button');
+const resetButton=document.querySelector('#reset-button');
+
+resetButton.addEventListener('click',()=>{
+  output.value = "";
+  input.value = "";
+  words.innerHTML=0;
+  characters.innerHTML=0;
+  spaces.innerHTML=0;
+  paragraphs.innerHTML=0;
+
+});
 
 
 function spaceCount(x)
