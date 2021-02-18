@@ -32,25 +32,29 @@
         </div>
         
         <div class="other-websites">
-          <a href="#" >Unit Converters</a>
+          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
         </div >        
     </header>
 
-  <main class="main-content">
-    <h2>Enter your input here:</h2>
+  <main>
+    <h2 style="text-align: center;">Enter your input here:</h2>
+    <div class="input-output">
     <div style="margin-bottom:20px;">
     <textarea type="text" id="input" placeholder="Type or paste your input here" rows="15" cols="60"></textarea>
     <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60" readonly></textarea>
     </div>
-    <input type="button" id="upper-button" value="Upper Case">
-    <input type="button" id="lower-button" value="Lower Case">
+    <div class="buttons">
+    <input type="button" id="upper-button" value="Upper">
+    <input type="button" id="lower-button" value="Lower">
     <input type="button" id="reset-button" value="Reset">
-    <div style="margin-top:40px;">
+  </div>
+    <div style="margin-top:30px;" class="results">
     <label for="words">WORDS:<span id="words">0</span></label>
     <label for="alpha">ALPHABETS/DIGITS:<span id="alpha">0</span></label>
     <label for="spaces">SPACES:<span id="spaces">0</span></label>
     <label for="paragraphs">PARAGRAPHS:<span id="paragraphs">0</span></label>
   </div>
+</div>
   </main>
   <section>
     <div class="content-info" style="text-align: justify;">

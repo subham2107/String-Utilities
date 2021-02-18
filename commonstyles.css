@@ -85,23 +85,13 @@ body{
         
   } 
 
-  /*.main-content{
+  .input-output{
     display:flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-   /* max-height: 600px;
-    min-height: 600px;
-    max-width: 600px;
-    min-width: 600px;
-    margin: 0 auto;
-    display:inline;
-    margin: 0 auto;
-  } */
-
-  .main-content{
-    text-align: center;
   }
+
 
   .dropdown-arrow{
     height: 10px;
@@ -146,7 +136,15 @@ body{
     
   }
 
-  @media screen and (max-width: 925px){
+  @media screen and (max-width: 1011px) {
+    
+    .content-info{
+      margin: auto;
+      max-width: 800px;    
+    }
+}
+
+@media screen and (max-width: 925px){
 
   textarea{
     height: 100px;
@@ -158,3 +156,74 @@ body{
     max-width: 500px;    
   }
 }
+
+
+
+ @media screen and (max-width: 655px) {
+
+  textarea{
+    height: 70px;
+    width: 210px;
+
+  }
+  
+    .content-info{
+      margin: auto;
+      max-width: 400px;    
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+
+  textarea{
+    height: 50px;
+    width: 150px;
+
+  }
+  
+    .content-info{
+      margin: auto;
+      max-width: 300px;    
+    }
+
+    #reset-button,
+    #upper-button,
+    #lower-button{
+      margin-top: 10px;
+      padding: 7px ;
+      margin-left: 7px;
+    }
+
+    #reset-button{
+      margin-left: 7px;
+    }
+
+   
+
+    .results{
+      text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 340px) {
+
+
+  textarea{
+    height: 45px;
+    width: 135px;
+
+  }
+  
+    .content-info{
+      margin: auto;
+      max-width: 300px;    
+    }
+
+    .results{
+      text-align: center;
+    }
+}
+
