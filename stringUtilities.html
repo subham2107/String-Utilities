@@ -13,48 +13,45 @@
 <body>
   <div class="non-footer">
     <header class="navbar">
-      <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
-      <div class="other-websites">
-        <a href="#">String Utilities</a>
-      </div>
-
-        <div class="other-websites">
-          <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
-        </div> 
-        <div class="other-websites">
-          <a href="https://my-color-converter.netlify.app/rgb-hex" target="_blank">Color Converter</a>
-        </div>
-        <div class="other-websites">
+      <div class="dropdown-nav" ><img id="hamburger" style="margin-top: 14px;" src ="Images/menu-24px.svg">
+        <div class="dropdown-content" >
+          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converter</a>
+          <a href="https://my-number-base-converter.netlify.app/decimaltobinary" target="_blank">Base Converter</a>
           <a href="https://my-time-stamp-converter.netlify.app/humantoepoch" target="_blank">Time Converter</a>
-        </div>
-        <div class="other-websites">
-          <a href="https://my-number-base-converter.netlify.app/decimaltobinary" target="_blank">Number base Converter</a>
-        </div>
+          <a href="https://my-color-converter.netlify.app/rgb-hex" target="_blank">Color Converter</a>
+          <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
+      </div>
+      </div>
+      
+      <div class="string">String Utilities</div>
         
-        <div class="other-websites">
-          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
-        </div >        
+        <div class="util"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+
     </header>
 
   <main>
-    <h2 style="text-align: center;">Enter your input here:</h2>
+    <h2 style="text-align: center;">Check it out here</h2>
     <div class="input-output">
-    <div style="margin-bottom:20px;">
-    <textarea type="text" id="input" placeholder="Type or paste your input here" rows="15" cols="60"></textarea>
-    <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60" readonly></textarea>
+    <div >
+    <textarea type="text" id="input" placeholder="Enter input" rows="15" cols="60"></textarea>
     </div>
-    <div class="buttons">
-    <input type="button" id="upper-button" value="Upper">
-    <input type="button" id="lower-button" value="Lower">
-    <input type="button" id="reset-button" value="Reset">
-  </div>
-    <div style="margin-top:30px;" class="results">
-    <label for="words">WORDS:<span id="words">0</span></label>
-    <label for="alpha">ALPHABETS/DIGITS:<span id="alpha">0</span></label>
-    <label for="spaces">SPACES:<span id="spaces">0</span></label>
-    <label for="paragraphs">PARAGRAPHS:<span id="paragraphs">0</span></label>
+    <div style="margin-top:20px;margin-bottom:20px;">
+      <input type="button" id="upper-button" value="Upper">
+      <input style="margin-left:20px;margin-right:20px;" type="button" id="lower-button" value="Lower">
+      <input type="button" id="reset-button" value="Reset">
+    </div>
+    <div>
+    <textarea type="text" id="output" placeholder="Output" rows="15" cols="60" readonly></textarea>
+    </div>
+    
+    <div style="margin-top:20px;text-align: center;" class="results">
+    <label for="words">WORDS: <span id="words">0</span>,</label>
+    <label for="alpha"> ALPHABETS/DIGITS: <span id="alpha">0</span>,</label>
+    <label for="spaces"> SPACES: <span id="spaces">0</span>,</label>
+    <label for="paragraphs"> PARAGRAPHS: <span id="paragraphs">0</span>.</label>
   </div>
 </div>
+
   </main>
   <section>
     <div class="content-info" style="text-align: justify;">
